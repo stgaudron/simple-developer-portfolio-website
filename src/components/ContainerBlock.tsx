@@ -12,6 +12,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
     description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
     image: "/avatar.png",
     type: "website",
+    date: new Date(),
     ...customMeta,
   };
   return (
@@ -39,7 +40,10 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
         {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
+          <meta
+            property="article:published_time"
+            content={meta.date.toString()}
+          />
         )}
       </Head>
       <main className="dark:bg-gray-800 w-full">
