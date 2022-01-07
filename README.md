@@ -2,7 +2,7 @@
 
 Converted to typescript from [Manu Arora PortFolio Website for Developers](https://github.com/manuarora700/simple-developer-portfolio-website)
 
-Typescript settings are very permissive, this is meant to be a starting point, for a personnal site, not production ready code for companies that would require noImplicitAny.
+Typescript settings are very permissive, this is meant to be a starting point, for a personnal site.
 
 File structure was modified to match NextJs Typescript style, jsconfig.json was commented but left there for reference.
 
